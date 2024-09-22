@@ -25,7 +25,7 @@ class FetchCustomersDataService implements FetchServiceInterface
             // Fetch customers data from terminals
             $customers = $this->chocoClient->getCustomersData(array_keys($terminalIdsNames));
 
-            $date = date('Ymd_H:i');
+            $date = date('Ymd_H_i');
             $storageDir = __DIR__  . "/../../storage/customers";
             if (!is_dir($storageDir)) {
                 mkdir($storageDir, 0777, true);

@@ -26,7 +26,7 @@ class FetchMainService implements FetchServiceInterface
             $terminalIdsNames = array_column($terminals, 'name', 'id');
             $allFilialData = $this->chocoClient->getAllFilialData(array_keys($terminalIdsNames));
 
-            $date = date('Ymd_H:i');
+            $date = date('Ymd_H_i');
             $storageDir = __DIR__  . "/../../storage/main";
             if (!is_dir($storageDir)) {
                 mkdir($storageDir, 0777, true);
