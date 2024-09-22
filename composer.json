@@ -1,0 +1,14 @@
+{
+    "autoload": {
+        "psr-4": {
+            "Src\\": "src/"
+        }
+    },
+
+    "require": {
+        "guzzlehttp/guzzle": "^7.9",
+        "ramsey/uuid": "^4.7",
+        "symfony/var-dumper": "^6.4",
+        "phpoffice/phpspreadsheet": "^2.2"
+    }
+}
